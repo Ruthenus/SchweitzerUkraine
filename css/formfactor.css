@@ -1,0 +1,476 @@
+/* Стиль ФОРМИ запиту */
+
+#the_first_form {
+  display: flex;
+  flex-direction: column;
+  width: 38.2%;
+  box-sizing: border-box;
+  /*width: auto;*/
+  padding-left: 1.2vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+}
+
+
+/* Стиль ФОРМИ кошика */
+
+#the_second_form {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 61.8%;
+  /*width: auto;*/
+  padding-left: 1.2vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+}
+
+/* Стиль рамки */
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1.7px ridge #002244;
+  padding: 10px;
+  margin-bottom: 5vh;
+  background-color: #faebd7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+legend {
+  font-weight: bold;
+  color: #00308F;
+}
+
+/* Для елементів форми запиту */
+
+.form-item {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background-color: #faebd7;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.form-item:hover {
+  background-color: #9bddff;
+}
+
+.form-item p {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 5px 0 10px;
+  text-indent: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: #e65100;
+  background-color: #faebd7;
+  text-align: justify;
+  transition: background-color 0.3s;
+}
+
+.form-item p:hover {
+  background-color: #9bddff;
+}
+
+.form-item p:nth-child(2) {
+  color: #00308F;
+  width: 95%;
+}
+
+.form-item label {
+  /*flex-shrink: 1;*/
+  width: 30%;
+  text-align: left;
+  color: #00308F;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-item label[for="question_area"] {
+  width: 58%;
+}
+
+.form-item input[type="text"],
+.form-item input[type="email"],
+.form-item input[type="tel"],
+.form-item select,
+.form-item textarea {
+  /*flex-shrink: 1;*/
+  width: 70%;
+  box-sizing: border-box;
+  text-align: left;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  background-color: #F5F5FD;
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.form-item select,
+.form-item input[type="tel"] {
+  width: 42%;
+}
+
+.form-item input[type="text"]::placeholder,
+.form-item input[type="email"]::placeholder,
+.form-item input[type="tel"]::placeholder,
+.form-item select::placeholder,
+.form-item textarea::placeholder {
+  text-align: left;
+  background-color: #F5F5FD;
+  color: #aaa;
+}
+
+.form-item input[type="text"]:focus,
+.form-item input[type="email"]:focus,
+.form-item input[type="tel"]:focus,
+.form-item select:focus,
+.form-item textarea:focus {
+  border-color: #FFA500;
+  box-shadow: 0 0 20px rgba(255, 165, 0, 0.75),
+                0 0 40px rgba(255, 140, 0, 0.5); 
+  outline: none;
+}
+
+/* Окремий стиль для кнопок */
+
+button {
+  /* width: 250px; */
+  background: #008080;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-family: fantasy;
+  font-size: larger;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 9px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(160, 32, 240, 0.5);
+}
+
+/* Уточнений стиль для переліку */
+
+.form-item select {
+  background-color: #E0F7FA;
+  color: #01579B;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  padding: 7px;
+  font-family: Arial, Helvetica, sans-serif;;
+  font-size: 1.05em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.form-item select:hover {
+  background-color: #B2EBF2;
+  border-color: #E6E6FA;
+  color: #004D40;
+}
+
+.form-item select option {
+  background-color: #fff;
+  color: #00796B;
+  padding: 7px;
+  font-family: Arial, Helvetica, sans-serif;;
+  font-size: 1em;
+}
+/* не працює в браузерах Edge, Chrome, Opera, Firefox */
+.form-item select option:hover {
+  background-color: #FFEBEE;
+  color: #D32F2F;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.form-item select option:disabled {
+  background-color: #f0f0f0;
+  color: #999999;
+}
+
+.form-item select option:checked {
+  background-color: #B2EBF2;
+  color: #004D40;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Уточнений стиль перемикачів */
+
+.form-item input[type="radio"] {
+  appearance: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  margin-right: 5px;
+  transition: background-color 0.3s;
+  border: 2px solid #ccc;
+}
+
+.form-item input[type="radio"]::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.form-item input[type="radio"]:checked:before {
+  background-color: #8e3a59;
+}
+
+.radio_button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+
+.form-item label[for="Ukraine"],
+.form-item label[for="Moldova"] {
+  width: 40%;
+}
+
+/* Стиль для галочки */
+
+.form-item input[type="checkbox"] {
+  appearance: none;
+  background-color: #F5F5FD;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-item input[type="checkbox"]:checked {
+  background-color: #E6E6FA;
+  border-color: #E6E6FA;
+}
+
+.form-item input[type="checkbox"]:checked::before {
+  content: '✓';
+  font-size: 36px;
+  font-weight: bolder;
+  color: #3CB371;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: -7px;
+  left: -0.4px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Стиль поля завантаження файлів */
+
+.form-item input[type="file"] {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;;
+  font-size: 1em;
+  cursor: pointer;
+  padding: 5px;
+  border: 2px solid #ccc;
+  border-radius: 7px;
+  background-color: #fff;
+  opacity: 0.5;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Стиль багаторядкового текстового поля */
+
+.form-item textarea {
+  flex: 1;
+  width: 100%;
+  text-indent: 15px;
+  resize: vertical;
+  overflow: auto;
+}
+
+/* Стилі сітки товарів у кошику */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.form-grid label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 210px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background-color: #003a5d;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: larger;
+  color: #fff;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.form-grid label:hover {
+  background-color: #F5F5FD;
+  border-color: #E6E6FA;
+  color: #000;
+}
+
+/* Стиль галочок вибору реле */
+
+.form-grid input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  appearance: none;
+  background-color: #F5F5FD;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.form-grid input[type="checkbox"]:checked {
+  background-color: #E6E6FA;
+  border-color: #E6E6FA;
+}
+
+.form-grid input[type="checkbox"]:checked::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  left: -5px;
+  width: 25px;
+  height: 35px;
+  border: solid #39FF14;
+  border-width: 0 8px 6.5px 0;
+  transform: rotate(37deg);
+}
+
+.form-grid label:hover input[type="checkbox"] {
+  border-color: #E6E6FA;
+}
+
+/* Стилізація кількості товарів */
+
+.form-grid input[type="number"] {
+  width: 4ch;
+  margin-left: 5px;
+  margin-right: 3px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 2px;
+  text-align: center;
+  transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+  background-color: #f5fffa;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: large;
+  font-weight: bold;
+  color: #FF69B4;
+}
+
+.form-grid input[type="number"]:focus {
+  border-color: #E6E6FA;
+  box-shadow: 0 0 5px rgba(230, 230, 250, 0.5);
+}
+
+.form-grid input .abbr {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: large;
+}
+
+/* Медіа-запити умовно для вузьких екранів */
+/* Відпрацьовано в Edge та Firefox */
+/* Перевірено на розмірах планшета Samsung Galaxy Tab A 10.1 */
+@media only screen and (max-width: 1300px) {
+  #the_first_form,
+  #the_second_form  {
+    width: 100%;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+  }
+  fieldset {
+        width: 95%;
+        margin-inline: auto;
+    }
+}
+/* Перевірено на розмірах мобільного телефона Xiaomi Redmi Note 11S */
+@media only screen and (max-width: 400px) {
+  #the_first_form,
+  #the_second_form {
+    width: 100%;
+    padding: 0.5vw;
+  }
+  fieldset {
+    width: 100%;
+    margin-inline: auto;
+  }
+  .form-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vh;
+  }
+  /* У браузерів для Win7 виникає питання, з іншими селекторами не вийшло */
+  .form-item:has(input[type="checkbox"]) {
+    flex-direction: row;
+    align-items: center;
+  }
+  a[href="#the_first_form"]{
+    width: 100%;
+  }
+  .form-item label,
+  .form-item input[type="text"],
+  .form-item input[type="email"],
+  .form-item input[type="tel"],
+  .form-item select,
+  .form-item textarea,
+  .form-item button {
+    width: 100%;
+    /*margin-top: 5px;*/
+  }
+  .form-item button {
+    align-items: center;
+  }
+  .form-item label[for="question_area"],
+  .form-item .radio_button {
+    width: 100%;
+  }
+}
