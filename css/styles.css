@@ -643,89 +643,6 @@ section.animation {
 }
 
 /* МЕДІА-ЗАПИТИ */
-/* Адаптація для мобільного телефона типу Redmi Note 11S */
-@media only screen and (max-width: 400px) and (max-height: 880px) {
-  /* Сайт mydevice.io допоміг визначити розмір екрана 393px x 873px */
-  /* Створив шаблон в інструментах розробника з розмірами 393px x 873px */
-  /* але grid анімації залишався нерухомим!.. Тому я змінив max... */
-
-  :root {
-    --side: 18vw;
-    /* Зміна розміру змінної */
-  }
-
-  main {
-    margin-top: 10vh;
-    margin-bottom: 5vh;
-  }
-
-  header h1 {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-    font-size: 3.5vw;
-  }
-
-  header nav a {
-    font-size: 2.5vw;
-  }
-
-  header nav {
-    width: 95%;
-    margin-top: 0;
-    margin-bottom: 1vh;
-  }
-
-  header div a:last-child {
-    display: none;
-  }
-
-  section.youtube {
-    width: 85vw;
-    margin-top: 12vh;
-    margin-bottom: 10vh;
-  }
-
-  .youtube iframe {
-    margin-bottom: 5vh;
-  }
-
-  #footer_for_smartphones {
-    display: block;
-  }
-
-  #footer_for_laptops_and_tablets {
-    display: none;
-  }
-
-  .instagram {
-    gap: 4vh 3.5vw;
-  }
-
-  .instagram img {
-    max-width: 70vw;
-    margin-bottom: 0;
-    box-shadow: 4px 4px 0 rgba(0, 58, 93, 0.3);
-    border-radius: 9px;
-  }
-
-  main.sel_hyperlinks {
-    height: 95vh;
-  }
-
-  section.animation {
-    left: 23vw;
-    top: 15vh;
-  }
-
-  .hyperlink_text {
-    font-size: 2.153vw;
-  }
-
-  .hyperlink_1 .hyperlink_text,
-  .hyperlink_2 .hyperlink_text {
-    font-size: 2.69vw;
-  }
-}
 
 /* Адаптація для планшета Samsung Galaxy Tab A 10.1 */
 @media only screen and (min-width: 450px) and (max-width: 1300px) and (max-height: 820px) {
@@ -816,6 +733,90 @@ section.animation {
 @media only screen and (max-width: 1300px) {
   main.orders {
     flex-direction: column;
+  }
+}
+
+/* Адаптація для мобільного телефона типу Redmi Note 11S */
+@media only screen and (max-width: 400px) and (max-height: 880px) {
+  /* Сайт mydevice.io допоміг визначити розмір екрана 393px x 873px */
+  /* Створив шаблон в інструментах розробника з розмірами 393px x 873px */
+  /* але grid анімації залишався нерухомим!.. Тому я змінив max... */
+
+  :root {
+    --side: 18vw;
+    /* Зміна розміру змінної */
+  }
+
+  main {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+  }
+
+  header h1 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: 3.5vw;
+  }
+
+  header nav a {
+    font-size: 2.5vw;
+  }
+
+  header nav {
+    width: 95%;
+    margin-top: 0;
+    margin-bottom: 1vh;
+  }
+
+  header div a:last-child {
+    display: none;
+  }
+
+  section.youtube {
+    width: 85vw;
+    margin-top: 12vh;
+    margin-bottom: 10vh;
+  }
+
+  .youtube iframe {
+    margin-bottom: 5vh;
+  }
+
+  #footer_for_smartphones {
+    display: block;
+  }
+
+  #footer_for_laptops_and_tablets {
+    display: none;
+  }
+
+  .instagram {
+    gap: 4vh 3.5vw;
+  }
+
+  .instagram img {
+    max-width: 70vw;
+    margin-bottom: 0;
+    box-shadow: 4px 4px 0 rgba(0, 58, 93, 0.3);
+    border-radius: 9px;
+  }
+
+  main.sel_hyperlinks {
+    height: 95vh;
+  }
+
+  section.animation {
+    left: 23vw;
+    top: 15vh;
+  }
+
+  .hyperlink_text {
+    font-size: 2.153vw;
+  }
+
+  .hyperlink_1 .hyperlink_text,
+  .hyperlink_2 .hyperlink_text {
+    font-size: 2.69vw;
   }
 }
 
