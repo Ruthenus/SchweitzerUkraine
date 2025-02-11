@@ -421,41 +421,50 @@ button:focus {
 /* Відпрацьовано в Edge та Firefox */
 /* Перевірено на розмірах планшета Samsung Galaxy Tab A 10.1 */
 @media only screen and (max-width: 1300px) {
+
   #the_first_form,
   #the_second_form  {
     width: 100%;
     padding-left: 0.5vw;
     padding-right: 0.5vw;
   }
+
   fieldset {
         width: 95%;
         margin-inline: auto;
     }
 }
 /* Перевірено на розмірах мобільного телефона Xiaomi Redmi Note 11S */
+
 @media only screen and (max-width: 400px) {
+  
   #the_first_form,
   #the_second_form {
     width: 100%;
     padding: 0.5vw;
   }
+
   fieldset {
     width: 100%;
     margin-inline: auto;
   }
+
   .form-item {
     flex-direction: column;
     align-items: flex-start;
     gap: 1vh;
   }
+
   /* У браузерів для Win7 виникає питання, з іншими селекторами не вийшло */
   .form-item:has(input[type="checkbox"]) {
     flex-direction: row;
     align-items: center;
   }
+
   a[href="#the_first_form"]{
     width: 100%;
   }
+
   .form-item label,
   .form-item input[type="text"],
   .form-item input[type="email"],
@@ -466,9 +475,11 @@ button:focus {
     width: 100%;
     /*margin-top: 5px;*/
   }
+
   .form-item button {
     align-items: center;
   }
+  
   .form-item label[for="question_area"],
   .form-item .radio_button {
     width: 100%;
