@@ -654,7 +654,7 @@ section.animation {
   }
 
   #body_products_page {
-    height: calc(100vh - 120px);
+    height: calc(100vh - 100px);
   }
 
   main {
