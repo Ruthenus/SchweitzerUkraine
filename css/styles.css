@@ -645,7 +645,7 @@ section.animation {
 /* МЕДІА-ЗАПИТИ */
 
 /* Адаптація для планшета Samsung Galaxy Tab A 10.1 */
-@media only screen and (min-width: 450px) and (max-width: 1300px) and (max-height: 820px) {
+@media only screen and (max-width: 1300px) and (max-height: 820px) {
   /* За допомогою сайту mydevice.io визначив 1280px x 800px */
 
   :root {
